@@ -7,7 +7,7 @@
 	<meta name="HandheldFriendly" content="true">
 	<meta name="theme-color" content="#F26B38">
 
-	<title>Happy Birthday | Siddhant Sharma</title>
+	<title>Happy Birthday Muoi</title>
 	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -16,15 +16,16 @@
 	<link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
 <body>
 	<br> <br> <br> <br> <br>
 	<div id="card">
 		<div id="card-inside">
 			<div class="wrap">
-				<center><p class="animated infinite wobble"><b><u>Happy Birthday!</b></u></p><center>
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco &nbsp;<i class="em-svg em-blush"></i></p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+				<center><p class="animated infinite wobble"><b><u>Happy Birthday, My Love</b></u></p><center>
+				<p>Tuổi mới, a chúc e thêm xinh đẹp, thêm giỏi giang và sẽ thành công trong công việc (êm đềm hơn, ít cần phải va chạm hơn) &nbsp;<i class="em-svg em-blush"></i></p>
+				<p>A mong ở những năm tiếp theo, mình vẫn sẽ ở bên nhau. Khi nhìn lại, cả a và e đều thấy mình đã đi được 1 chặng đường dài và mình đã có thêm bước tiến mới trong tình cảm. Và đừng quên là, khi e cần, a sẽ luôn ở bên e. Yêu e!
 				 </p><p class="signed"><u>Made With </b><b> <i class="em-svg em-heart"></i></p>
 			</div>
 		</div>
@@ -62,19 +63,33 @@
 					</svg>
 				</div>
 			</div>
-			<button id="open" data-balloon="Click to Open Card!" data-balloon-length="medium" data-balloon-pos="left" data-balloon-visible>&gt;
+			<button id="open" data-balloon="Nhấn để mở!" data-balloon-length="medium" data-balloon-pos="left" data-balloon-visible>&gt;
 			</button>
 			<button id="close" data-balloon="! bɿɒɔ ɘƨolɔ oɈ ʞɔilƆ" data-balloon-length="medium" data-balloon-pos="left" data-balloon-visible>&lt;
 			</button>
 			<div class="card-front_inside">
 				<br> <br> <br>
 				<div class="polaroid">
-					<div class="img" style="background-image: url('https://static.vecteezy.com/system/resources/previews/000/608/881/original/heart-flat-icon-vector.jpg')"></div>
+					<div class="img" style="background-image: url(css/we.jpg)"></div>
 				</div>
 				<div class="shadow"></div>
 			</div>
 		</div>
 	</div>
+		 <audio controls loop style="display:none" id="audio">
+  <source src="css/hbd.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<script>
+	$('document').ready(function(){
+		$('#open').click(function(){
+			var x = document.getElementById("audio"); 
+			x.play(); 
+		})
+		
+	})
+</script>
+	</script>
 	<script  src="js/index.js"></script>
 </body>
 </html>
